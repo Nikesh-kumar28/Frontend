@@ -1,0 +1,174 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* sec1 start */
+.sec1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./gymgirl.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px;
+}
+
+
+.sec1container {
+    width: 650px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.sec1 h1 {
+    font-size: 70px;
+}
+
+.sec1 p {
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.btn-primary {
+    background-color:#ffc63d;
+    font-size: 25px;
+    border: none;
+    padding: 16px 30px;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #ffc63d;
+}
+
+
+.btn-outline-primary {
+    background-color:transparent;
+    font-size: 25px;
+    border: none;
+    padding: 16px 30px;  
+    border: 2px solid #ffc63d; 
+    color: white;
+    font-weight: 500;
+}
+
+.btn-outline-primary:hover {
+    background-color:#ffc63d ;
+    font-size: 25px;
+    border: none;
+    padding: 16px 30px;
+}
+
+.box-hero {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* sec1 end */
+
+/* sec2 start */
+
+.sec2 {
+    width: 100%;
+    height: auto;
+    background-color: #ffc63d;
+    display: flex;
+    padding: 30px;
+}
+
+.sec2box1 {
+    width: 50%;
+    height: 500px;
+}
+
+.sec2box2 {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.sec2box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+
+.sec2box2innerbox {
+    width: 50%;
+    height: auto;
+    line-height: 2.5;
+    padding: 20px;
+}
+
+.sec2box2innerbox h1{
+    font-size: 60px;
+}
+
+.sec2box2innerbox h3 {
+    font-size: 30px;
+}
+
+.sec2box2innerbox p {
+    font-size: 20px;
+}
+
+.sec2imagebox {
+    width: 25%;
+    height: 300px;
+    background-color: black;
+    color: wheat;
+}
+.sec2imagebox3{
+    height: 400px;
+    
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 568px) {
+    .sec1 h1 {
+       font-size: 30px;
+    }
+    .btn-primary {  
+      font-size: 15px;
+      padding: 10px 15px;
+    }
+
+    .btn-primary:hover {
+       background-color: white;
+       color: #ffc63d;
+       border: none;
+    }
+
+    .btn-outline-primary {
+        background-color:transparent;
+        font-size: 15px;
+        border: none;
+        padding: 10px 15px;  
+    }
+
+    .btn-outline-primary:hover { 
+        padding: 10px 15px;
+        font-size: 15px;
+    }   
+}
+
+
