@@ -8,6 +8,30 @@
     box-sizing: border-box;
 }
 
+/* Whaatsapp btn round start */
+
+.whatsapp-btn {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 64px;
+  height: 64px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+  z-index: 999999;
+  transition: transform 0.2s ease;
+}
+
+/* END Whatsapp btn */
+
+.whatsapp-btn:hover {
+  transform: scale(1.08);
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
@@ -16,7 +40,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f5f7fb;
-    color: #18233a;
+    color: #F8FAFC · #059669 · #172033;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -43,6 +67,8 @@ textarea {
     max-width: 1250px;
     margin: auto;
 }
+
+
 
 
 /* =========================================================
@@ -499,10 +525,24 @@ textarea {
     border-radius: 36px;
     padding: 0px;
     text-align: left;
-    box-shadow: 0 10px 30px rgba(7, 21, 47, 0.07);
+    box-shadow: 0 0px 5px 3px rgba(7, 21, 47, 0.07);
     overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
     transition: all 0.35s ease;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.service-card img{
+    border-radius: 20px;
+}
+.service-card h3{
+    font-size: 18px !important;
+    white-space: pre;
 }
 
 .service-card::before {
@@ -572,7 +612,7 @@ textarea {
     color: #07152f;
     border-radius: 30px;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 18px;
     margin-bottom: 10px;
     /* position: absolute;
@@ -1628,7 +1668,10 @@ textarea {
 
     .service-card {
         padding: 15px;
+        
     }
+
+  
 
     .service-card p {
         min-height: auto;
@@ -1685,4 +1728,526 @@ textarea {
         transition-duration: 0.01ms !important;
     }
 
+}
+
+
+        /* --- CSS Variables for Theming --- */
+/* :root { */
+    /* Default Light Mode */
+    /* --bg-color: #ffffff;
+    --text-main: #111827;
+    --text-muted: #6b7280;
+    --btn-bg: #ffffff;
+    --btn-border: #e5e7eb;
+    --btn-hover: #f9fafb;
+    --btn-text: #374151;
+    --accent-color: #f59e0b; Orange accent from logo */
+    /* --font-family: 'Inter', sans-serif; */
+/* }
+
+[data-theme="dark"] { */
+    /* Dark Mode */
+    /* --bg-color: #0f172a;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --btn-bg: #1e293b;
+    --btn-border: #334155;
+    --btn-hover: #334155;
+    --btn-text: #cbd5e1;
+} */
+
+/* --- Base Styles --- */
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-family);
+    transition: background-color 0.4s ease, color 0.4s ease, font-family 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    overflow-x: hidden;
+} */
+
+/* --- Top Controls --- */
+/* .controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.control-btn {
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    color: var(--btn-text);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.control-btn:hover {
+    background-color: var(--btn-hover);
+    transform: translateY(-2px);
+} */
+
+/* --- Main Container --- */
+/* .main-wrapper {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-out forwards;
+} */
+
+/* --- Slider Wrapper --- */
+/* .slider-wrapper {
+    width: 100%;
+    padding: 0 80px; Space for the absolute arrows */
+/* } */
+
+/* --- Slick Slider Customization --- */
+/* .slick-slide:focus {
+    outline: none;
+}
+
+.slick-prev, .slick-next {
+    display: none !important; /* Hide default arrows */
+/* } */
+
+/* --- Testimonial Content Layout --- */
+/* .slide-content {
+.company-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-main);
+    margin-bottom: 40px;
+}
+
+.company-logo svg {
+    width: 32px;
+    height: 32px;
+    color: var(--accent-color);
+}
+
+.quote-text {
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--text-main);
+    margin-bottom: 48px;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.author-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.author-details h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.author-details p {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+/* --- Custom Navigation Arrows (Absolute Left/Right) --- */
+/* .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    color: var(--btn-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+} */
+/* 
+.nav-btn:hover {
+    background-color: var(--btn-hover);
+    transform: translateY(-50%) scale(1.05);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.nav-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+#prev-btn {
+    left: 0;
+}
+
+#next-btn {
+    right: 0;
+} */
+
+/* --- Animations --- */
+/* @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+} */
+
+/* --- Responsive Design --- */
+/* @media (max-width: 768px) {
+    .slider-wrapper {
+        padding: 0 50px;
+    }
+
+    .quote-text {
+        font-size: 1.35rem;
+        margin-bottom: 32px;
+    }
+
+    .company-logo {
+        font-size: 1.25rem;
+        margin-bottom: 24px;
+    }
+
+    .company-logo svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .nav-btn {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .nav-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .controls {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .control-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .slider-wrapper {
+        padding: 0 40px;
+    }
+
+    .quote-text {
+        font-size: 1.125rem;
+    }
+
+    .nav-btn {
+        width: 36px;
+        height: 36px;
+    }
+    
+    #prev-btn {
+        left: -10px;
+    }
+
+    #next-btn {
+        right: -10px;
+    }
+}
+     */
+
+
+
+/* Review & Feedback Page */
+
+/* ===== BASIC RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+     body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.header h2 {
+    font-size: 25px;
+    color: #172b4d;
+}
+
+.header h2 span {
+    color: #16a36a;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #172b4d;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.home-link:hover {
+    color: #16a36a;
+}
+
+/* ===== REVIEW SECTION ===== */
+.review-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* ===== REVIEW CARD ===== */
+.review-card {
+    background: #ffffff;
+    width: 100%;
+    /* max-width: 580px; */
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(25, 45, 75, 0.10);
+    margin: auto;
+}
+
+.review-icon {
+    width: 65px;
+    height: 65px;
+    background: #fff4d6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0 auto 18px;
+}
+
+.review-card h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #172b4d;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #707b8c;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* ===== FORM ===== */
+.form-group {
+    margin-bottom: 23px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #27364b;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #dce2eb;
+    border-radius: 9px;
+    background: #fff;
+    color: #222;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #16a36a;
+    box-shadow: 0 0 0 3px rgba(22, 163, 106, 0.10);
+}
+
+/* ===== STAR RATING ===== */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 38px;
+    color: #d5d9e0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: #ffb400;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.submit-btn {
+    width: 100%;
+    border: none;
+    border-radius: 9px;
+    padding: 16px;
+    background: #16a36a;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #108653;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(22, 163, 106, 0.2);
+}
+
+.privacy-note {
+    margin-top: 18px;
+    text-align: center;
+    color: #7a8493;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: #7a8493;
+    font-size: 13px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .header {
+        padding: 18px 5%;
+    }
+
+    .header h2 {
+        font-size: 21px;
+    }
+
+    .review-section {
+        padding: 30px 15px;
+    }
+
+    .review-card {
+        padding: 27px 20px;
+        border-radius: 14px;
+    }
+
+    .review-card h1 {
+        font-size: 25px;
+    }
+
+    .rating label {
+        font-size: 34px;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+      .service-icon {
+        border-radius: 12px !important;
+        overflow: hidden !important;
+        clip-path: inset(0 round 12px);
+    }
+
+    .service-icon img {
+        display: block;
+        width: 100%;
+        height: 118%;
+        object-fit: fill;
+        border-radius: 12px !important;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    /* display: flex !important; */
+    width: 56px;
+    height: 56px;
+    right: 14px;
+    bottom: 90px;
+  }
+  .whatsapp-btn svg {
+    width: 30px;
+    height: 30px;
+  }
 }
